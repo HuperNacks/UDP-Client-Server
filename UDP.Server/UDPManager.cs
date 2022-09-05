@@ -37,7 +37,7 @@ namespace UDP.Server
         {
             byte[] bytes = _udp.Receive(ref _ipEndpoint);
             string messageFromClient = Encoding.ASCII.GetString(bytes, 0, bytes.Length);
-            var decyptedMessage = ExpressEncription.RSAEncription.DecryptString(messageFromClient, @"D:\programare\Max volosenko\Task\UDP.Client\private.key");
+            var decyptedMessage = ExpressEncription.RSAEncription.DecryptString(messageFromClient, @"D:\Local\Task\UDP.Client\private.key");
             Console.WriteLine($" {decyptedMessage}");
 
             return decyptedMessage;
@@ -50,7 +50,7 @@ namespace UDP.Server
             if (!string.IsNullOrWhiteSpace(message) && !(message.Length < 5 ) )
             {
                 string _messageToClient = "Message Received ";
-                var EncryptedMessage = ExpressEncription.RSAEncription.EncryptString(_messageToClient, @"D:\programare\Max volosenko\Task\UDP.Client\public.key");
+                var EncryptedMessage = ExpressEncription.RSAEncription.EncryptString(_messageToClient, @"D:\Local\Task\UDP.Client\public.key");
                 byte[] bufferToSend = Encoding.ASCII.GetBytes(EncryptedMessage);
 
 
@@ -62,7 +62,7 @@ namespace UDP.Server
                
                 //lifes--;
                 string _messageToClient = "Error";
-                var EncryptedMessage = ExpressEncription.RSAEncription.EncryptString(_messageToClient, @"D:\programare\Max volosenko\Task\UDP.Client\public.key");
+                var EncryptedMessage = ExpressEncription.RSAEncription.EncryptString(_messageToClient, @"D:\Local\Task\UDP.Client\public.key");
                 byte[] bufferToSend = Encoding.ASCII.GetBytes(EncryptedMessage);
 
                 _udp.Send(bufferToSend, bufferToSend.Length, Config.IPAdress, Config.ClientPort);
