@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "yi5wUsDdKab/U72OdKpRYI4jXlnFrQL7uYYf0Oo91Pz0/ig7hE0yKnUqxg/D0LtbqKWqN97qTusaMWm580/kSw==",
+  "success": true,
+  "projectFilePath": "D:\\programare\\Max volosenko\\Task\\UDP.Client\\UDP.Server\\UDP.Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Constantin\\.nuget\\packages\\bcrypt\\1.0.0\\bcrypt.1.0.0.nupkg.sha512",
+    "C:\\Users\\Constantin\\.nuget\\packages\\twileloop.expresssecurity\\1.0.0\\twileloop.expresssecurity.1.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'BCrypt 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "BCrypt",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

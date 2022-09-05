@@ -1,0 +1,59 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "UDP.Client/1.0.0": {
+        "dependencies": {
+          "Twileloop.ExpressSecurity": "1.0.0"
+        },
+        "runtime": {
+          "UDP.Client.dll": {}
+        }
+      },
+      "BCrypt/1.0.0": {
+        "runtime": {
+          "lib/DevOne.Security.Cryptography.BCrypt.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Twileloop.ExpressSecurity/1.0.0": {
+        "dependencies": {
+          "BCrypt": "1.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/ExpressSecurity.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "UDP.Client/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BCrypt/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/ibwe2Sg7MJR26IrEzW2Rde9/+A+AYXB5Kf9w/8BVLDdzSfUe4W2M7i2efy1Wa9wHh1k0y81Q6h9Ty8C6IrUGA==",
+      "path": "bcrypt/1.0.0",
+      "hashPath": "bcrypt.1.0.0.nupkg.sha512"
+    },
+    "Twileloop.ExpressSecurity/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8bpLfwFCinerZyhYJHKQVXhOnFU/ptxBLHqg5arZKq8OtfOsJ2RfFKKVHEppVtxPMt70zjToURlZxa8RgYfsMQ==",
+      "path": "twileloop.expresssecurity/1.0.0",
+      "hashPath": "twileloop.expresssecurity.1.0.0.nupkg.sha512"
+    }
+  }
+}
